@@ -25,9 +25,9 @@ The simulation followed the **NIST SP 800-61 Rev. 2** Incident Handling Guide, s
 
 | Tool | Category | Technical Application |
 | :--- | :--- | :--- |
-| **Wazuh** | SIEM / XDR | [cite_start]Real-time File Integrity Monitoring (FIM) and Sysmon event correlation[cite: 20, 22]. |
-| **Splunk** | Log Management | [cite_start]Advanced querying (KQL/SPL) for identifying process trees and execution timelines[cite: 71, 73]. |
-| **Wireshark** | Network Forensics | [cite_start]Pcap analysis to identify outbound C2 communication and DNS exfiltration patterns[cite: 22, 73]. |
+| **Wazuh** | SIEM / XDR | Real-time File Integrity Monitoring (FIM) and Sysmon event correlation. |
+| **Splunk** | Log Management | Advanced querying (KQL/SPL) for identifying process trees and execution timelines. |
+| **Wireshark** | Network Forensics | Pcap analysis to identify outbound C2 communication and DNS exfiltration patterns. |
 | **Sysmon** | Endpoint Telemetry | Detailed event logging (Event ID 1, 11, and 7) for process and file creation tracking. |
 
 ### Defense-in-Depth Strategy
