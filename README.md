@@ -1,23 +1,20 @@
-# The Resilience Path 🛡️
+# The Resilience Path
 ## Lucas Nahuel Caminos | Cybersecurity Analyst & Computer Engineering Student
 
-Welcome to my professional cybersecurity portfolio. This repository serves as a technical showcase of my journey in defensive operations, risk management, and security engineering.
+This repository serves as a comprehensive technical portfolio documenting my expertise in defensive cybersecurity, risk management, and security engineering. It integrates my background as a software developer with specialized training in SOC operations and infrastructure security.
 
-### 👨‍💻 Professional Profile
-I am a **Computer Engineering Student** based in Córdoba, Argentina. With a background in **Full Stack Development** [cite: 31, 81], I specialize in **Defensive Cybersecurity** and **SOC Operations**[cite: 4, 55]. My focus is on protecting critical infrastructure through rigorous monitoring, vulnerability assessment, and the application of global frameworks such as **NIST CSF** and **ISO 27001**[cite: 5, 56, 14, 65].
+### Professional Profile
+I am a Computer Engineering student with a focus on defensive cybersecurity. My approach combines technical execution in vulnerability analysis and incident monitoring with a strategic understanding of security frameworks such as NIST CSF and ISO 27001. I have professional experience in full-stack development, which allows me to analyze security from the code level to the network architecture.
 
----
+### Core Competencies
+* **Monitoring & SOC Ops:** Wazuh, Splunk (KQL), ELK Stack, Log Analysis.
+* **Infrastructure & Networking:** TCP/IP, Cisco Packet Tracer, GNS3, SSH/PuTTY, Wireshark.
+* **Assessments & GRC:** NIST CSF, ISO 27001, McCumber Model, Regulatory Compliance (GDPR).
+* **Security Engineering:** Python, Docker, SQL, Secure Development Lifecycle (SDLC).
 
-### 🛠️ Technical Ecosystem
-* **Defense & Monitoring:** Wazuh, Splunk (KQL), ELK Stack, Wireshark[cite: 9, 60].
-* **Network Infrastructure:** Cisco Packet Tracer, GNS3, SSH/PuTTY[cite: 10, 15, 61, 66].
-* **Offensive & Assessments:** Nmap, Burp Suite, Kali Linux, OWASP ZAP[cite: 9, 10, 60, 61].
-* **Engineering & Dev:** Python, SQL (MySQL), Docker, Git, ERP Totvs[cite: 10, 11, 61, 62].
-
----
-
-### 📑 Navigation Guide
-- [Blue Team Operations](./01-Blue-Team-Ops/): Incident response and log analysis recreations.
-- [GRC & Strategy](./02-Assessments-GRC/): Risk assessments and maturity plans.
-- [Network Security](./03-Network-Security/): Secure architecture designs.
-- [Development Security](./04-DevSec-Projects/): Security-focused software projects.
+### Repository Structure
+* **01-Blue-Team-Ops:** Incident response simulations and SIEM analysis.
+* **02-Assessments-GRC:** Security assessments, risk management models, and compliance reports.
+* **03-Network-Security:** Network architecture design and protocol hardening.
+* **04-DevSec-Projects:** AI security tools and secure software development projects.
+* **05-Cert-Writeups:** Documentation and technical summaries of professional certifications.
