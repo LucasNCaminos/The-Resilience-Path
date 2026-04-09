@@ -1,3 +1,34 @@
-Incident Response Simulation: Ransomware Scenario AnalysisI. Problem Definition & Environmental ContextObjective: Detect, analyze, and document the lifecycle of a ransomware infection within a controlled Windows environment to establish effective containment and recovery protocols.Laboratory Setup:
-The environment was deployed using a virtualized infrastructure (Oracle VirtualBox/VMware) based on a "Victim-Analyst" architecture. This setup was designed following the technical guidelines of the SOC Level 1 Path and academic recommendations from the Cybersecurity Diploma at Universidad Blas Pascal.Endpoint (Victim): Windows 10 Pro (Build 19044) with real-time protection disabled to simulate a successful initial execution.Security Monitoring Node: Ubuntu Server 22.04 LTS hosting a Wazuh Manager and an ELK Stack instance for log aggregation and correlation.Analysis Workstation: Kali Linux 2024.1 equipped with forensic and network analysis tools.The Threat Scenario:
-An unauthorized binary, masquerading as a financial PDF update, was executed on the victim's workstation. The malware began a high-frequency encryption routine using an AES-256 algorithm, appending the .crypt extension to all files within the %USERPROFILE%\Documents and %USERPROFILE%\Desktop directories.II. Technical Stack & MethodologyThis simulation followed the NIST SP 800-61 Rev. 2 (Computer Security Incident Handling Guide) phases: Detection, Analysis, Containment, and Eradication.SIEM / XDR (Wazuh): Utilized for File Integrity Monitoring (FIM) and real-time detection of suspicious process creation.Log Correlation (Splunk/KQL): Applied for deep-dive forensics, correlating Sysmon Event ID 1 (Process Creation) and Event ID 11 (File Create) to identify the source of the encryption routine.Network Forensics (Wireshark): Employed to capture and analyze outbound traffic to identify potential Command & Control (C2) callbacks and DNS exfiltration attempts.Automation: Python-based scripts were reviewed to simulate the automation of log parsing for rapid IoC (Indicator of Compromise) extraction.
+# Incident Response Simulation: Ransomware Scenario Analysis
+
+## I. Problem Definition & Environmental Context
+
+### Objective
+To detect, analyze, and document the lifecycle of a ransomware infection within a controlled Windows environment, establishing effective containment and recovery protocols based on NIST standards.
+
+### Scenario Background
+This project simulates a high-impact security incident where an unauthorized binary, masquerading as a financial update, was executed on a production endpoint. The malware initiated an automated encryption routine, targeting critical user directories and modifying file extensions to `.crypt`. The focus of this simulation is the role of a SOC Tier 1 Analyst in identifying the infection vector and mitigating lateral movement.
+
+### Laboratory Environment
+The environment was structured using a virtualized "Victim-Analyst" architecture to ensure safe execution and telemetry isolation.
+
+* **Endpoint (Victim):** Windows 10 Pro (Build 19044). Real-time protections were adjusted to simulate a successful initial execution.
+* **Management Node:** Ubuntu Server 22.04 LTS hosting a Wazuh Manager instance for log aggregation and File Integrity Monitoring (FIM).
+* **Analysis Station:** Kali Linux 2024.1, utilized for forensic network analysis and Command & Control (C2) identification.
+
+---
+
+## II. Technical Stack & Methodology
+
+The simulation followed the **NIST SP 800-61 Rev. 2** Incident Handling Guide, specifically focusing on the Detection and Analysis phases.
+
+### Toolset Documentation
+
+| Tool | Category | Technical Application |
+| :--- | :--- | :--- |
+| **Wazuh** | SIEM / XDR | [cite_start]Real-time File Integrity Monitoring (FIM) and Sysmon event correlation[cite: 20, 22]. |
+| **Splunk** | Log Management | [cite_start]Advanced querying (KQL/SPL) for identifying process trees and execution timelines[cite: 71, 73]. |
+| **Wireshark** | Network Forensics | [cite_start]Pcap analysis to identify outbound C2 communication and DNS exfiltration patterns[cite: 22, 73]. |
+| **Sysmon** | Endpoint Telemetry | Detailed event logging (Event ID 1, 11, and 7) for process and file creation tracking. |
+
+### Defense-in-Depth Strategy
+The analysis incorporates principles of layered defense, evaluating how perimeter controls and endpoint detection failed to prevent the initial execution, and how internal monitoring (East-West traffic) was used for detection.
