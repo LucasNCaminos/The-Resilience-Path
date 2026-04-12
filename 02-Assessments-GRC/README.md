@@ -1,18 +1,30 @@
 # Governance, Risk, and Compliance (GRC) & Security Assessments
 
-This folder contains documentation regarding security maturity auditing, risk assessment methodologies, and regulatory alignment.
+This folder documents my expertise in auditing security maturity, designing risk management frameworks, and ensuring regulatory alignment across different sectors.
 
-### Key Deliverables
+---
 
-#### Strategic Security Assessment (Real Estate Sector)
-* **Objective:** Identification of attack vectors and critical asset vulnerabilities using Nmap and Burp Suite.
-* **Framework:** Designed mitigation strategies based on the NIST Cybersecurity Framework (CSF).
+### [Real Estate Strategic Assessment](./risk-assessment-real-estate)
+**Case Study: Post-Incident Hardening & Security Awareness**
 
-#### Cybersecurity Maturity Strategic Plan
-* **Focus:** Evaluation of organizational security posture and development of a roadmap to reach target maturity tiers under NIST CSF standards.
+* **Scenario:** Comprehensive security overhaul of an SME following a financial breach due to social engineering.
+* **Framework:** Implementation of the **NIST Cybersecurity Framework (CSF)** to bridge technical and human-centric gaps.
+* **Key Focus:** Asset discovery, network segmentation (VLANs), and the development of a tailored Security Awareness Program for non-technical staff.
 
-#### Risk Management: McCumber Model
-* **Methodology:** Comprehensive analysis of asset Confidentiality, Integrity, and Availability (CIA) to prioritize security investments and controls.
+---
 
-#### Regulatory Compliance Analysis
-* **Scope:** Comparative study between international data protection standards (GDPR) and local regulations (Argentine Law 25.326) for sensitive data management.
+### [Certified Assessment Assets](./assessment-assets)
+**Strategic Documentation & Compliance Models**
+
+This repository contains a collection of professional-grade assessments and strategic plans developed during my specialization. It includes:
+
+* **Cybersecurity Maturity Strategic Plan:** A roadmap for critical infrastructure organizations to reach target maturity tiers under NIST standards.
+* **Risk Management (McCumber Model):** A multidimensional analysis of asset Confidentiality, Integrity, and Availability (CIA) across information states.
+* **Regulatory Compliance Analysis:** A comparative study between **GDPR** and **Argentine Law 25.326** for sensitive data management.
+
+---
+
+### Key Competencies Demonstrated
+* **Frameworks:** NIST CSF, ISO 27001, McCumber Cube.
+* **Regulatory:** Law 25.326 (AR), GDPR (EU).
+* **Methodologies:** Gap Analysis, Maturity Assessment, Risk Treatment Plans.
